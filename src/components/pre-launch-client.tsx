@@ -157,15 +157,7 @@ export default function PreLaunchClient() {
     const [restaurantName, setRestaurantName] = useState("")
     const [subscribed, setSubscribed] = useState(false)
 
-    const launchDate = new Date(Date.UTC(2025, 5, 14, 21, 0, 0))
-
-    const handleSubscribe = (e: React.FormEvent) => {
-        e.preventDefault()
-        // Here you would typically send the data to your backend
-        console.log({ name, email, restaurantName })
-        // For now, just show the success message
-        setSubscribed(true)
-    }
+    const launchDate = new Date(Date.UTC(2025, 4, 15, 6, 0, 0));
 
     const handleWaitlistSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
@@ -287,7 +279,7 @@ export default function PreLaunchClient() {
             <AnimatedSection className="bg-white dark:bg-gray-900">
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6 dark:text-white">The Problem We're Solving</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6 dark:text-white">The Problem We&apos;re Solving</h2>
                         <p className="text-xl text-gray-600 dark:text-gray-300">
                             Traditional restaurant ordering is full of friction points that frustrate both customers and businesses.
                         </p>
@@ -627,7 +619,7 @@ export default function PreLaunchClient() {
                                             onChange={(e) => setRestaurantName(e.target.value)}
                                         />
                                         <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                                            Let us know if you're representing a restaurant.
+                                            Let us know if you&apos;re representing a restaurant.
                                         </p>
                                     </div>
 
@@ -641,9 +633,9 @@ export default function PreLaunchClient() {
                                     <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 dark:bg-green-900">
                                         <CheckCircle className="h-8 w-8 text-green-600 dark:text-green-400" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">You're on the List!</h3>
+                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">You&apos;re on the List!</h3>
                                     <p className="text-gray-600 dark:text-gray-300">
-                                        Thank you for joining our waitlist. We'll notify you as soon as Scan&Snack is available in your area.
+                                        Thank you for joining our waitlist. We&apos;ll notify you as soon as Scan&Snack is available in your area.
                                     </p>
                                 </div>
                             )}
