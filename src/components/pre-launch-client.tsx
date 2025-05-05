@@ -86,7 +86,7 @@ const CountdownTimer = ({ launchDate }: { launchDate: Date }) => {
                     </div>
                 ))}
             </div>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">Launching at 00:00 EAT (UTC+3)</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">Launching at 09:00 EAT (UTC+3)</p>
         </div>
     )
 }
@@ -157,7 +157,7 @@ export default function PreLaunchClient() {
     const [restaurantName, setRestaurantName] = useState("")
     const [subscribed, setSubscribed] = useState(false)
 
-    const launchDate = new Date(Date.UTC(2025, 4, 15, 6, 0, 0));
+    const launchDate = new Date(Date.UTC(2025, 5, 15, 6, 0, 0));
 
     const handleWaitlistSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
