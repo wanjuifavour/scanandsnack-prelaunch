@@ -242,7 +242,7 @@ export default function PreLaunchClient() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="max-w-md mx-auto"
                     >
-                        <form onSubmit={handleWaitlistSubmit} className="flex flex-col sm:flex-row gap-3">
+                        {/* <form onSubmit={handleWaitlistSubmit} className="flex flex-col sm:flex-row gap-3">
                             <Input
                                 type="email"
                                 placeholder="Enter your email"
@@ -259,7 +259,7 @@ export default function PreLaunchClient() {
                                 {isSubmitting ? "Joining..." : "Join Waitlist"}
                                 <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>
-                        </form>
+                        </form> */}
                     </motion.div>
                 </motion.div>
 
@@ -293,8 +293,7 @@ export default function PreLaunchClient() {
                                     "Waiting for servers to take orders and process payments",
                                     "Limited information about menu items and ingredients",
                                     "Difficulty splitting bills among large groups",
-                                    "No way to track order status in real-time",
-                                    "Language barriers in tourist destinations",
+                                    "No way to track order status in real-time"
                                 ].map((problem, index) => (
                                     <motion.li
                                         key={index}
