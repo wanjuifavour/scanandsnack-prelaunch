@@ -654,7 +654,7 @@ export default function PreLaunchClient() {
                             </Link>
                             <p className="mt-2 text-gray-400">The future of restaurant ordering</p>
                         </div>
-                        <div className="flex space-x-6">
+                        /*<div className="flex space-x-6">
                             <Link href="/terms-and-conditions" className="text-gray-400 hover:text-white transition-colors">
                                 Terms
                             </Link>
@@ -664,7 +664,7 @@ export default function PreLaunchClient() {
                             <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
                                 Contact
                             </Link>
-                        </div>
+                        </div>*/
                     </div>
                     <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500">
                         <p>&copy; {new Date().getFullYear()} Scan&Snack. All rights reserved.</p>
