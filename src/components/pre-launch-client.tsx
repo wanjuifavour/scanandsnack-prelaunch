@@ -157,7 +157,7 @@ export default function PreLaunchClient() {
     const [restaurantName, setRestaurantName] = useState("")
     const [subscribed, setSubscribed] = useState(false)
 
-    const launchDate = new Date(Date.UTC(2025, 5, 27, 6, 0, 0));
+    const launchDate = new Date(Date.UTC(2025, 6, 4, 6, 0, 0));
 
     const handleWaitlistSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
